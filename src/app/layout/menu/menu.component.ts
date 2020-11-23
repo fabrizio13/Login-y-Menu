@@ -11,23 +11,15 @@ export class MenuComponent implements OnInit {
   menus: Menu[] = [
     {
       id: 1,
-      icon: "fas fa-home",
-      name: "Home",
+      icon: null,
+      name: "Lotes",
       route: "/home",
-      active: false,
-      menus: []
-    },
-    {
-      id: 2,
-      icon: "fas fa-hand-holding-usd",
-      name: "Financeiro",
-      route: null,
       active: false,
       menus: [
         {
           id: 6,
           icon: null,
-          name: "Example menu",
+          name: "Lotes de latas vacías",
           route: "/",
           active: false,
           menus: []
@@ -35,15 +27,32 @@ export class MenuComponent implements OnInit {
         {
           id: 7,
           icon: null,
-          name: "Example menu",
+          name: "Lotes de materia prima",
           route: "/",
           active: false,
           menus: []
-        },
+        }
+      ]
+    },
+    {
+      id: 2,
+      icon: null,
+      name: "Trabajadores",
+      route: null,
+      active: false,
+      menus: [ ]
+    },
+    {
+      id: 3,
+      icon: null,
+      name: "Informes",
+      route: null,
+      active: false,
+      menus: [
         {
           id: 8,
           icon: null,
-          name: "Example menu",
+          name: "Informes diarios",
           route: "/",
           active: false,
           menus: []
@@ -51,24 +60,7 @@ export class MenuComponent implements OnInit {
         {
           id: 9,
           icon: null,
-          name: "Example menu",
-          route: "/",
-          active: false,
-          menus: []
-        },
-      ]
-    },
-    {
-      id: 3,
-      icon: "fas fa-chart-pie",
-      name: "Estatisticas",
-      route: null,
-      active: false,
-      menus: [
-        {
-          id: 10,
-          icon: null,
-          name: "Example menu",
+          name: "Informes mensuales",
           route: "/",
           active: false,
           menus: []
@@ -77,15 +69,23 @@ export class MenuComponent implements OnInit {
     },
     {
       id: 4,
-      icon: "fas fa-glass-cheers",
-      name: "Party",
+      icon: null,
+      name: "Distribución",
       route: null,
       active: false,
       menus: [
         {
+          id: 10,
+          icon: null,
+          name: "Comprobante de despacho",
+          route: "/",
+          active: false,
+          menus: []
+        },
+        {
           id: 11,
           icon: null,
-          name: "Example menu",
+          name: "Puntos de venta",
           route: "/",
           active: false,
           menus: []
@@ -94,20 +94,44 @@ export class MenuComponent implements OnInit {
     },
     {
       id: 5,
-      icon: "fas fa-cog",
-      name: "Configurações",
+      icon: null,
+      name: "Productos",
+      route: null,
+      active: false,
+      menus: []
+    },
+    {
+      id: 12,
+      icon: null,
+      name: "Proveedor",
       route: null,
       active: false,
       menus: [
         {
-          id: 12,
+          id: 13,
           icon: null,
-          name: "Example menu",
+          name: "Proveedores",
+          route: "/",
+          active: false,
+          menus: []
+        },
+        {
+          id: 14,
+          icon: null,
+          name: "Comprobante de materia prima",
           route: "/",
           active: false,
           menus: []
         }
       ]
+    },
+    {
+      id: 15,
+      icon: null,
+      name: "Respaldo total",
+      route: null,
+      active: false,
+      menus: []
     },
   ];
 

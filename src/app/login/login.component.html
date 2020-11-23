@@ -1,31 +1,31 @@
 <section class="bg-grey">
   <form class="form-signin needs-validation" th:action="@{/login}" method="POST" novalidate>
-    <div class="row justify-content-center mb-3 shadow-font">
+    <!--<div class="row justify-content-center mb-3 shadow-font">
         <i class="fas fa-grin-squint-tears fa-6x"></i>
-    </div>
-    <h1 class="h3 mb-3 text-center shadow-font">Fazer login</h1>
+    </div>-->
+    <h1 class="h3 mb-3 text-center shadow-font">Pesunor S.A.</h1>
 
     <div class="form-group">
-        <label for="inputEmail" class="sr-only">Endereço de email</label>
+        <label for="inputEmail" class="sr-only">Usuario</label>
         <input
             id="inputEmail"
             type="email"
             name="email"
             class="form-control"
-            placeholder="Email"
+            placeholder="Usuario"
             required
             autofocus>
 
-        <label for="inputPassword" class="sr-only">Senha</label>
+        <label for="inputPassword" class="sr-only">Contraseña</label>
         <input
             id="inputPassword"
             type="password"
             name="password"
             class="form-control"
-            placeholder="Senha"
+            placeholder="Contraseña"
             required>
         <div class="invalid-feedback text-center">
-            Por favor informe o email e senha.
+            Por favor solicite las credenciales con el informático.
         </div>
     </div>
 
@@ -37,24 +37,24 @@
                 class="custom-control-input"
                 id="inputRememberMe">
 
-            <label class="custom-control-label" for="inputRememberMe">Lembrar de mim</label>
+            <label class="custom-control-label" for="inputRememberMe">Recuérdame</label>
         </div>
     </div>
 
-    <button routerLink="/home" class="btn btn-lg btn-purple btn-block" type="submit">Login</button>
+    <button routerLink="/home" class="btn btn-lg btn-purple btn-block" type="submit">Acceder</button>
 
     <div th:if="${param.error}" class="alert alert-danger alert-dismissible fade show mt-2" role="alert">
-        <strong>Senha ou usuario invalido!</strong>
+        <strong>Usuario o contraseña inválida</strong>
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
     </div>
 
-    <p class="mt-5 mb-3 text-center text-muted">
+    <!--<p class="mt-5 mb-3 text-center text-muted">
         <strong>By</strong> Renato Henrique <small>2019</small>
         <a href="https://github.com/Throyer">
             <i class="ml-2 fab fa-github"></i>
         </a>
-    </p>
+    </p>-->
   </form>
 </section>
